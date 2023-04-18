@@ -1,0 +1,7 @@
+/* Current version of exports */
+STRPGMEXP PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE(*GEN)
+  EXPORT SYMBOL("math100_sum")
+  EXPORT SYMBOL("math100_dif")
+  EXPORT SYMBOL("math100_mul")
+  EXPORT SYMBOL("math100_div")
+ENDPGMEXP

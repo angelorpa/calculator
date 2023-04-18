@@ -1,0 +1,24 @@
+**free
+
+//
+// Add Two numbers 
+//
+dcl-pr math100_sum packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr math100_dif packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr math100_mul packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr math100_div packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
