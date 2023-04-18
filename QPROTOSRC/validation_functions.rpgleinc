@@ -1,0 +1,14 @@
+**free
+
+///
+/// check for non-digits characters
+/// this procedure will take a string and check if it contains non-digits characters
+/// @param The string
+/// @param The position numeber of the first non-digit character
+/// @return false (*OFF) if no non-digit character in the string is found, 
+/// or true (*ON) if one exists.
+/// 
+dcl-pr valfuncs_nonDigits ind extproc(*dclCase);
+  string varchar(100) value;
+  postion packed(3 : 0);
+end-pr;
