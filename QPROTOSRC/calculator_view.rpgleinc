@@ -1,0 +1,24 @@
+**free 
+
+dcl-pr calculatorView_show ind extproc(*dclCase);
+end-pr;
+
+dcl-pr calculatorView_loadScreen ind extproc(*dclCase);
+end-pr;
+
+dcl-pr calculatorView_cleanScreen ind extproc(*dclCase);
+end-pr;
+
+dcl-pr calculatorView_displayMessage ind extproc(*dclCase);
+  msgText varchar(70) const;
+end-pr;
+
+dcl-pr calculatorView_displayResult ind extproc(*dclCase);
+  result packed(15 : 2) const;
+end-pr;
+
+dcl-pr calculatorView_readInput ind extproc(*dclCase);
+  operand1 packed(15 : 2);
+  operand2 packed(15 : 2);
+  function varchar(3);
+end-pr;

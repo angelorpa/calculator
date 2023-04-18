@@ -1,0 +1,9 @@
+/* Current version of exports */
+STRPGMEXP PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE(*GEN)
+  EXPORT SYMBOL("calculatorView_show")
+  EXPORT SYMBOL("calculatorView_loadScreen")
+  EXPORT SYMBOL("calculatorView_cleanScreen")
+  EXPORT SYMBOL("calculatorView_displayMessage")
+  EXPORT SYMBOL("calculatorView_displayResult")
+  EXPORT SYMBOL("calculatorView_readInput")
+ENDPGMEXP

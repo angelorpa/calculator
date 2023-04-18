@@ -1,0 +1,43 @@
+     A*%%TS  SD  20230418  144456  ANGELORPA   REL-V7R5M0  5770-WDS     
+     A*%%EC                                                             
+     A                                      DSPSIZ(24 80 *DS3)          
+     A                                      INDARA                      
+     A                                      CA03(03 'EXIT')             
+     A                                      CA12(12 'CANCEL')           
+     A          R HEADER                                                
+     A*%%TS  SD  20230418  143938  ANGELORPA   REL-V7R5M0  5770-WDS     
+     A                                  1  2USER                        
+     A                                  1 27'BASIC CALCULATOR PROGRAM'  
+     A                                  1 71TIME                        
+     A                                  1 62DATE                        
+     A                                      EDTCDE(Y)                   
+     A          R FOOTER                                                
+     A*%%TS  SD  20230418  142009  ANGELORPA   REL-V7R5M0  5770-WDS     
+     A                                      OVERLAY                     
+     A                                 22  2'F3=EXIT'                   
+     A                                 22 11'F12=CANCEL'                
+     A            ERRMSG        78A  O 23  2                            
+     A          R DETAIL                                             
+     A*%%TS  SD  20230418  144456  ANGELORPA   REL-V7R5M0  5770-WDS  
+     A                                      OVERLAY                  
+     A                                  4  2'OPERAND 1:'             
+     A                                      COLOR(PNK)               
+     A            OPERAND1      15Y 2I  4 14COLOR(WHT)               
+     A                                      PUTRETAIN                
+     A                                  5  2'OPERAND 2:'             
+     A                                      COLOR(TRQ)               
+     A            OPERAND2      15Y 2I  5 14COLOR(WHT)               
+     A                                      PUTRETAIN                
+     A                                  6  2'FUNCTION :'             
+     A                                      DSPATR(HI)               
+     A                                      COLOR(YLW)               
+     A            FUNCTION       3A  I  6 14DSPATR(HI)               
+     A                                      PUTRETAIN                
+     A                                      DSPATR(UL)               
+     A                                      COLOR(WHT)               
+     A                                  6 80' '                      
+     A                                  7 27' '                           
+     A                                  8  2'RESULT   :'  
+     A            RESULT        20A  O  8 14DSPATR(HI)    
+     A                                      DSPATR(UL)    
+     A                                      COLOR(YLW)    
