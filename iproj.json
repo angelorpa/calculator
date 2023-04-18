@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "description": "Basic Calculator",
+  "objlib": "&CURLIB",
+  "curlib": "&CURLIB",  
+  "includePath": ["QPROTOSRC"],
+  "preUsrlibl": ["&CURLIB"],
+  "postUsrlibl": [],
+  "setIBMiEnvCmd": [],
+  "repository": "https://github.com/angelorpa/calculator.git"
+}
