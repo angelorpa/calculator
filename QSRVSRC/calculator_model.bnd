@@ -1,0 +1,10 @@
+/* Current version of exports */
+STRPGMEXP PGMLVL(*CURRENT) LVLCHK(*YES) SIGNATURE(*GEN)
+  EXPORT SYMBOL("calculator_findSum")
+  EXPORT SYMBOL("calculator_findDifference")
+  EXPORT SYMBOL("calculator_findProduct")
+  EXPORT SYMBOL("calculator_findQuotient")
+  EXPORT SYMBOL("calculator_error")
+  EXPORT SYMBOL("calculator_doOperation")  
+  EXPORT SYMBOL("calculator_isFunctionAllowed")  
+ENDPGMEXP

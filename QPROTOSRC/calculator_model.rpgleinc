@@ -1,0 +1,45 @@
+**free
+
+dcl-c CALCULATOR_ERR_DIV_BY_CERO 100;
+dcl-c CALCULATOR_ERR_NOT_NUMERIC_OPERAND 101;
+dcl-c CALCULATOR_ERR_OPERATION_NOT_VALID 102;
+
+dcl-c CALCULATOR_OPERATION_SUM 'SUM';
+dcl-c CALCULATOR_OPERATION_DIF 'DIF';
+dcl-c CALCULATOR_OPERATION_MUL 'MUL';
+dcl-c CALCULATOR_OPERATION_DIV 'DIV';
+
+dcl-pr calculator_findSum packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr calculator_findDifference packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr calculator_findProduct packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr calculator_findQuotient packed(15 : 2) extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+end-pr;
+
+dcl-pr calculator_doOperation ind extproc(*dclCase);
+  operand1 packed(15 : 2) const;
+  operand2 packed(15 : 2) const;
+  operation varchar(3) const;
+  result packed(15 : 2);
+end-pr;
+
+dcl-pr calculator_error varchar(70) extproc(*dclCase);
+  errorId int(10) options(*nopass : *omit);
+end-pr;
+
+dcl-pr calculator_isFunctionAllowed ind extproc(*dclCase);
+  function varchar(3) const;
+end-pr;
