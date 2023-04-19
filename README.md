@@ -1,11 +1,13 @@
 # Calculator
 
-a basic calculator that do the four basic arithmetic operations:
+This project is oriented to explain the software architectural pattern: Model View Controller
+and consist in a simple calculator that do the four basic arithmetic operations:
 
 - Addition (Finding the Sum; '+')
 - Subtraction (Finding the difference; '-') 
 - Multiplication (Finding the product; '×')
 - Division (Finding the quotient; '÷')
+
 
 
 # Poject folder structure
